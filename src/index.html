@@ -1,14 +1,29 @@
-<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>LocalAnime</title>
-  <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="/">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Watch anime locally!</title>
 </head>
+
 <body>
-  <app-root></app-root>
+    <header class="nav-bar">
+        <ul class="nav-bar-items">
+            <li class="nav-bar-main active">
+                Home
+            </li>
+            <li>Browse Animes</li>
+            <li class="nav-bar-right">Upload Anime</li>
+        </ul>
+    </header>
+    <main>
+        <section class="recently-added-animes-section">
+            <app-root></app-root>
+        </section>
+    </main>
 </body>
+
 </html>

@@ -1,0 +1,73 @@
+.anime-card {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    height: 18.5rem;
+    max-height: 18.5rem;
+    width: 12rem;
+    overflow: hidden;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.name {
+    color: white;
+    padding: .5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.episode {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    padding: .5rem;
+    padding-left: 1.3rem;
+    background-color: #9B00BF;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+    color: white;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    height: 15rem;
+    background-color: white;
+    transition: all .5s;
+}
+
+.image::after {
+    font-size: 10rem;
+    content: '›';
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.5s;
+    color: rgb(56, 56, 56);
+}
+
+.date {
+    color: rgb(56, 56, 56);
+    opacity: 0;
+    text-align: center;
+    padding: 1rem;
+    transition: all .5s;
+}
+
+.anime-card:hover .date {
+    opacity: 1;
+}
+
+.anime-card:hover .image::after {
+    opacity: 1;
+}
+
+.anime-card:hover .image {
+    filter: brightness(90%);
+}

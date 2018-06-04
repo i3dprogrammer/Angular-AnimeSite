@@ -1,0 +1,9 @@
+<a class="anime-card" href="{{episode.id}}">
+  <div class="image">
+      <div class="episode">{{episode.episodeNumber.toString().padStart(2, '0')}} / {{episode.anime.totalEpisodes}}</div>
+      <div class="date">{{episode.airedDate}}</div>
+  </div>
+  <div class="name" title="{{episode.anime.name}}">
+    {{episode.anime.name}}
+  </div>
+</a>

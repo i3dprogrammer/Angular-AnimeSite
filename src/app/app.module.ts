@@ -1,16 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
+import { AnimeListComponent } from './anime-list/anime-list.component';
+import { AnimeCardComponent } from './anime-card/anime-card.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AnimeListComponent,
+    AnimeCardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
