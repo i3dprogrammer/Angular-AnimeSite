@@ -1,4 +1,10 @@
-<div class="bar purple-bar">Recently Added &#8658;</div>
-<anime-list [episodes]="episodes" *ngIf="!loading"></anime-list>
-<div class="loader" *ngIf="loading"></div>
-<span class="error" *ngIf="error">Error occurred while fetching latest episodes!</span>
+<header class="nav-bar">
+    <nav class="nav-bar-items">
+        <a class="nav-bar-main" routerLink="/home" routerLinkActive="active">Home</a>
+        <a routerLink="/list" routerLinkActive="active">Browse Animes</a>
+        <a class="nav-bar-right" routerLink="/upload" routerLinkActive="active">Upload Anime</a>
+    </nav>
+</header>
+<main>
+    <router-outlet></router-outlet>
+</main>

@@ -1,0 +1,6 @@
+<section class="recently-added-animes-section">
+  <div class="bar purple-bar">Recently Added &#8658;</div>
+  <anime-list [episodes]="episodes" *ngIf="!loading"></anime-list>
+  <div class="loader" *ngIf="loading"></div>
+  <span class="error" *ngIf="error">Error occurred while fetching latest episodes!</span>
+</section>
